@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/person"/>
+
+        <TextView
+            android:layout_marginTop="45dp"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/userValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="30dp"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/emailValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:textSize="20dp"
+            android:gravity="center_horizontal"/>
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:onClick="logout"/>
+
+    </LinearLayout>
+
+</LinearLayout>

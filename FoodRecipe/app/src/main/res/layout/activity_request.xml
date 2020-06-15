@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Rr1"
+    tools:context=".RequestActivity">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/requestTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Request A Recipe"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/requestTextView"
+            android:layout_marginTop="100dp"
+            android:padding="10dp"
+            >
+            <TextView
+                android:id="@+id/request1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Recipe Name"
+                android:gravity="center_horizontal"
+                />
+
+            <EditText
+                android:id="@+id/RecipeName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/request1"
+                />
+
+            <TextView
+                android:id="@+id/request2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Recipe Origin"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/RecipeName"
+                />
+
+            <EditText
+                android:id="@+id/OriginName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/request2"
+                />
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/requestPost"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/OriginName"
+                android:text="Request"
+                android:onClick="request"
+                />
+        </RelativeLayout>
+</RelativeLayout>

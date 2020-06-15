@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="330dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Choose Image"
+        android:layout_below="@id/image"
+        />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/choose"/>
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textTitle"
+        />
+
+
+    <TextView
+    android:layout_marginTop="30dp"
+    android:id="@+id/textIngredients"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Ingrdients"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/title"/>
+    <EditText
+        android:id="@+id/Ingredients"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textIngredients"
+        />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/textProcedure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Procedure"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Ingredients"/>
+    <EditText
+        android:id="@+id/Procedure"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textProcedure"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="350dp"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Procedure"
+        android:layout_marginTop="20dp"
+        >
+        <RadioButton
+            android:id="@+id/firstRadio"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="Breakfast"
+            android:layout_marginRight="15dp"
+            android:checked="true"
+            android:onClick="checked"
+            />
+
+        <RadioButton
+            android:id="@+id/secondRadio"
+            android:layout_width="130dp"
+            android:layout_height="20dp"
+            android:text="Full Meal"
+            android:onClick="checked"
+            />
+
+        <RadioButton
+            android:id="@+id/thirdRadio"
+            android:layout_width="130dp"
+            android:layout_height="20dp"
+            android:text="Snacks"
+            android:onClick="checked"
+            />
+    </RadioGroup>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="350dp"
+        android:layout_height="20dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_below="@id/radio"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/radio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Post Recipe"
+        />
+
+</RelativeLayout>
